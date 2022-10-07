@@ -48,7 +48,7 @@ _install_os_packages:
 	$(info [*] Upgrading Python SAM CLI and CloudFormation linter to the latest version...)
 	python3 -m pip install --upgrade --user cfn-lint aws-sam-cli
 	$(info [*] Install Jinja...)
-	python3 install jinja2==3.0.1
+	python3 -m pip install jinja2==3.0.1 --user cfn-lint
 
 
 define HELP_MESSAGE
