@@ -47,7 +47,8 @@ _install_os_packages:
 	yum install jq -y
 	$(info [*] Upgrading Python SAM CLI and CloudFormation linter to the latest version...)
 	python3 -m pip install --upgrade --user cfn-lint aws-sam-cli
-	pip install flask -y
+	$(info [*] Install Jinja...)
+	python3 install jinja2==3.0.1
 
 
 define HELP_MESSAGE
