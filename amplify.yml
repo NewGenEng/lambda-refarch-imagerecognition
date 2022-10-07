@@ -5,8 +5,6 @@ backend:
       commands:
         - npm install -g @aws-amplify/cli@latest
         - make init # install OS packages  and dev tools (awscli, sam-cli, linters, etc.)
-        - pip uninstall flask
-        - pip install flask
     build:
       commands:
         - "# Execute Amplify CLI with the helper script"
